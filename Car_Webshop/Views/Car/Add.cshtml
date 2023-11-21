@@ -1,0 +1,21 @@
+﻿@model Car
+@{
+    ViewData["Title"] = "Add a car to List";
+}
+
+<h4>New Car</h4>
+<br />
+<form asp-controller="Car" asp-action="AddCar" method="post">
+    <div class="col-lg-4">
+        <input asp-for="Type" placeholder="The type of the car" autocomplete="off" class="form-control" />
+        <input asp-for="Model" placeholder="The type of the car" autocomplete="off" class="form-control" />
+        <input asp-for="Manufacturer" placeholder="The type of the car" autocomplete="off" class="form-control" />
+        <input asp-for="RegistrationDate" placeholder="The type of the car" autocomplete="off" class="form-control" />
+        <input asp-for="Specification" placeholder="The type of the car" autocomplete="off" class="form-control" />
+        <input asp-for="Description" placeholder="The type of the car" autocomplete="off" class="form-control" />
+        <input asp-for="Issues" placeholder="The type of the car" autocomplete="off" class="form-control" />
+        <input asp-for="ChassisNumber" placeholder="The type of the car" autocomplete="off" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Add Car</button>
+</form>
