@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\Car_Webshop\\Car_Webshop.csproj": {}
+    "C:\\Users\\placi\\OneDrive\\Dokumentumok\\GitHub\\Webshop\\Car_Webshop\\Car_Webshop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\Car_Webshop\\Car_Webshop.csproj": {
+    "C:\\Users\\placi\\OneDrive\\Dokumentumok\\GitHub\\Webshop\\Car_Webshop\\Car_Webshop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\Car_Webshop\\Car_Webshop.csproj",
+        "projectUniqueName": "C:\\Users\\placi\\OneDrive\\Dokumentumok\\GitHub\\Webshop\\Car_Webshop\\Car_Webshop.csproj",
         "projectName": "Car_Webshop",
-        "projectPath": "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\Car_Webshop\\Car_Webshop.csproj",
-        "packagesPath": "C:\\Users\\mmarso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\Car_Webshop\\obj\\",
+        "projectPath": "C:\\Users\\placi\\OneDrive\\Dokumentumok\\GitHub\\Webshop\\Car_Webshop\\Car_Webshop.csproj",
+        "packagesPath": "C:\\Users\\placi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\placi\\OneDrive\\Dokumentumok\\GitHub\\Webshop\\Car_Webshop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mmarso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\placi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,11 +39,20 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
