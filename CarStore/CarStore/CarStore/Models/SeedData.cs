@@ -1,25 +1,34 @@
 ﻿using CarStore.DAL;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace CarStore.Models
 {
+    // This class provides seed data to ensure the initial presence of cars in the database.
     public static class SeedData
     {
+        // Method to ensure the population of the database with initial data.
         public static void EnsurePopulated(IApplicationBuilder app)
         {
+            // Create a scoped CarStoreDbContext instance using dependency injection.
             CarStoreDbContext context = app.ApplicationServices
                 .CreateScope()
                 .ServiceProvider
                 .GetRequiredService<CarStoreDbContext>();
 
+            // Apply any pending migrations to the database.
             if (context.Database.GetPendingMigrations().Any())
             {
                 context.Database.Migrate();
             }
 
+            // Check if the 'Cars' table is empty.
             if (!context.Cars.Any())
             {
+                // If the table is empty, add a set of predefined cars.
                 context.Cars.AddRange(
+                    // Car entries with various makes, models, conditions, descriptions, and prices.
                     new Car
                     {
                         Make = "Suzuki",
@@ -140,7 +149,9 @@ namespace CarStore.Models
                             Description = "Off-road ready Jeep Wrangler from 2018. Powerful and rugged, perfect for adventure seekers and outdoor enthusiasts.",
                             Price = 600_0m
                         });
+                
 
+                // Save changes to the database.
                 context.SaveChanges();
             }
         }
