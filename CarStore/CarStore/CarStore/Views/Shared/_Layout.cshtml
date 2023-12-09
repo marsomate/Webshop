@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pásztóhy&Marsó Car Shop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .bg-dark {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        #intro {
+            background: linear-gradient(to bottom, rgba(255, 70, 22, 1), rgba(255, 70, 22, 0));
+            padding: 20px;
+            color: #fff;
+            text-align: center; /* Középre igazítás */
+        }
+
+
+
+            #intro h2 {
+                border-bottom: 2px solid #fff;
+                padding-bottom: 10px;
+            }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="bg-dark p-2">
+            <span class="navbar-brand ml-2">
+                Pásztóhy&Marsó Car Store
+            </span>
+        </div>
+        <div class="row m-0">
+            <div id="intro" class="col-12">
+                <h2>Welcome to Pásztóhy&Marsó Car Shop</h2>
+                <p>Explore our curated selection of high-quality cars. Whether you're looking for a stylish sedan, a powerful SUV, or a fuel-efficient hybrid, we have the perfect vehicle for you. Our commitment to quality ensures a reliable and enjoyable driving experience.</p>
+            </div>
+            <div class="col-12 main-content">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Pásztóhy&Marsó Car Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

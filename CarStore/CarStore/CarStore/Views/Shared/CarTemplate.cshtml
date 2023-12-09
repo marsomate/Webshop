@@ -1,0 +1,23 @@
+﻿@model Car
+<div class="card" style="width:70%; background: linear-gradient(beige, darkgray); padding: 10px;">
+    <div class="card-body">
+        <table width="1000px">
+            <tr>
+                <td width="400px">
+                    <h3 class="card-title">@Model.Make @Model.Model</h3>
+                </td>
+                <td width="400px"><p class="card-text">Condition: @Model.Condition</p></td>
+                <td>
+                    <button type="button" class="btn btn-primary"
+                            style="background-color: orangered; color: white; font-size: 14px; border-color: black">
+                        <a asp-controller="Cart" asp-action="Buy" asp-route-id="@Model.CarID"
+                           style="color: black; font-weight: bolder;">@Model.Price.ToString("c")</a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+        <p class="card-text">@Model.Description</p>
+
+    </div>
+</div>
