@@ -63,9 +63,13 @@
     </style>
 </head>
 <body>
+    <!-- Cart Page Heading -->
     <h3 style="color: red">Cart Page</h3>
+
+    <!-- Cart Table -->
     <table>
         <thead>
+            <!-- Table Header Row -->
             <tr>
                 <th>Option</th>
                 <th>Id</th>
@@ -77,28 +81,42 @@
             </tr>
         </thead>
         <tbody>
+            <!-- Loop through items in the Cart -->
             @foreach (var item in ViewBag.Cart)
             {
                 <tr>
+                    <!-- Remove Option -->
                     <td>
                         <a asp-controller="Cart" asp-action="Remove" asp-route-id="@item.Product.CarID">Remove</a>
                     </td>
+                    <!-- Car ID -->
                     <td>@item.Product.CarID</td>
+                    <!-- Car Make -->
                     <td>@item.Product.Make</td>
+                    <!-- Car Model -->
                     <td>@item.Product.Model</td>
+                    <!-- Car Price -->
                     <td>@item.Product.Price $</td>
+                    <!-- Quantity -->
                     <td align="center">@item.Quantity</td>
+                    <!-- Subtotal -->
                     <td align="center">@(item.Product.Price * item.Quantity) Ft</td>
                 </tr>
             }
+
+            <!-- Total Row -->
             <tr class="total-row">
                 <td align="right" colspan="6">Sum</td>
+                <!-- Total Price -->
                 <td>@ViewBag.Total</td>
             </tr>
         </tbody>
     </table>
+
+    <!-- Continue Shopping and Check Out Links -->
     <br />
     <a asp-controller="Home" asp-action="Index">Continue Shopping</a>
     <a asp-controller="Home" asp-action="Checkout">Check Out</a>
 </body>
+
 </html>

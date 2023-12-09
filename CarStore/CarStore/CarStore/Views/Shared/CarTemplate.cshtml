@@ -1,15 +1,29 @@
 ﻿@model Car
+
+<!-- Card container with styling -->
 <div class="card" style="width:70%; background: linear-gradient(beige, darkgray); padding: 10px;">
+
+    <!-- Card body -->
     <div class="card-body">
+
+        <!-- Table for arranging content -->
         <table width="1000px">
             <tr>
+                <!-- Displaying Make and Model -->
                 <td width="400px">
                     <h3 class="card-title">@Model.Make @Model.Model</h3>
                 </td>
-                <td width="400px"><p class="card-text">Condition: @Model.Condition</p></td>
+
+                <!-- Displaying Car Condition -->
+                <td width="400px">
+                    <p class="card-text">Condition: @Model.Condition</p>
+                </td>
+
+                <!-- Button for adding the car to the cart -->
                 <td>
                     <button type="button" class="btn btn-primary"
                             style="background-color: orangered; color: white; font-size: 14px; border-color: black">
+                        <!-- Link for adding to cart with CarID as route parameter -->
                         <a asp-controller="Cart" asp-action="Buy" asp-route-id="@Model.CarID"
                            style="color: black; font-weight: bolder;">@Model.Price.ToString("c")</a>
                     </button>
@@ -17,6 +31,7 @@
             </tr>
         </table>
 
+        <!-- Displaying Car Description -->
         <p class="card-text">@Model.Description</p>
 
     </div>

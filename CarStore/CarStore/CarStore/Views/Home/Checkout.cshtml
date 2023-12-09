@@ -23,13 +23,19 @@
     </style>
 </head>
 <body>
+    <!-- Confirmation Message -->
     <div class="confirmation-message">
-        Köszönjük a vásárlást!
+        Thank you for your purchase!
     </div>
+
+    <!-- Button for Going Back to Shopping -->
     <button type="button" class="btn btn-primary"
             style="margin-top: 350px; margin-bottom: 100px; background-color: orangered; color: white; font-size: 28px; border-color: black">
-        <a asp-controller="Home" asp-action="Index"
-           style="color: black; font-weight: bolder">GO BACK TO SHOPPING</a>
+        <!-- Link to Home/Index Controller Action -->
+        <a asp-controller="Home" asp-action="Index" style="color: black; font-weight: bolder">
+            GO BACK TO SHOPPING
+        </a>
     </button>
 </body>
+
 </html>
