@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mmarso\\Downloads\\CarStore\\CarStore\\CarStore\\CarStore.csproj": {}
+    "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\CarStore\\CarStore\\CarStore\\CarStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mmarso\\Downloads\\CarStore\\CarStore\\CarStore\\CarStore.csproj": {
+    "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\CarStore\\CarStore\\CarStore\\CarStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mmarso\\Downloads\\CarStore\\CarStore\\CarStore\\CarStore.csproj",
+        "projectUniqueName": "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\CarStore\\CarStore\\CarStore\\CarStore.csproj",
         "projectName": "CarStore",
-        "projectPath": "C:\\Users\\mmarso\\Downloads\\CarStore\\CarStore\\CarStore\\CarStore.csproj",
+        "projectPath": "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\CarStore\\CarStore\\CarStore\\CarStore.csproj",
         "packagesPath": "C:\\Users\\mmarso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mmarso\\Downloads\\CarStore\\CarStore\\CarStore\\obj\\",
+        "outputPath": "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\CarStore\\CarStore\\CarStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wqCG84LwRUD5+p3bP1QxCK4UsvbAhy4JFBf5aINWQvxVonP4/vLiA7zHukFwjdojP8F9mPWpQ9vAYLhyZiPaeQ==",
+  "dgSpecHash": "ZfhKS5PuxITBTd++mfR7wiirgHn9cGSxqTUD+Z5H+Rq7kf2hxhZNwUszVQjSx15C8Lu/a+EeHZ/oT8T0hheuWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mmarso\\Downloads\\CarStore\\CarStore\\CarStore\\CarStore.csproj",
+  "projectFilePath": "C:\\Users\\mmarso\\Documents\\GitHub\\Webshop\\CarStore\\CarStore\\CarStore\\CarStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mmarso\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\mmarso\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

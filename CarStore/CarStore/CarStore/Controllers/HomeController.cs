@@ -29,8 +29,6 @@ namespace CarStore.Controllers
 
         public IActionResult Checkout()
         {
-            // Add logic for the checkout process here
-            // For example, you might want to display a form for user information and payment options.
             return View();
         }
 
